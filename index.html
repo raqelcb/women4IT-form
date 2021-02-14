@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Alta Telefónica</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <div class="form">
+    <h1>Formulario Información Alta Telefónica</h1>
+
+<!--    <form action="./procesarFormulario.php" name="telefonica"> -->
+    <form action="#" name="telefonica">
+        <!--Introducir informacion-->
+        <fieldset class="form__box">
+            <legend class="form__title">Datos Personales</legend> 
+
+            <div class="form__input">
+                <label for="nombre"> Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Intriduzca su nombre" maxlength="30" required="required">
+            </div>
+            <div class="form__input">
+                <label for="apellidos"> Apellidos: </label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Intriduzca sus apellidos" maxlength="60" required="required">
+            </div>
+
+            <div class="form__input">
+                <label for="direccion"> Dirección: </label>
+                <input type="text" id="direccion" name="direccion" placeholder="Intriduzca su direccion" maxlength="60" required="required">
+            </div>
+            <div class="form__input">
+                <label for="localidad"> Localidad: </label>
+                <input type="text" id="localidad" name="localidad" placeholder="Intriduzca su localidad" maxlength="60" required="required">
+            </div>
+            <!--numerico tamaño 5-->
+            <div class="form__input">
+                <label for="cp"> Código Postal: </label>
+                <input type="text" id="cp" name="cp" placeholder="Intriduzca su código postal" maxlength="5" required="required">
+            </div>
+        </fieldset>
+
+        <!--Tipo de contrato, recoger info-->
+        <fieldset class="form__box">
+            <legend class="form__title">Tipo de Contratación</legend>
+
+            <div class="form__radio">
+                <div class="radio__item">
+                    <label for="nuevo"> Nueva Contratación: </label>
+                    <input type="radio" name="contratacion" value="nuevo" checked="checked">
+                </div>
+                <div class="radio__item">
+                    <label for="portabilidad"> Portabilidad: </label>
+                    <input type="radio" name="contratacion" value="portabilidad">
+                </div>
+                <div class="radio__item">
+                    <label for="cambio"> Cambio de Contrato: </label>
+                    <input type="radio" name="contratacion" value="cambio">
+                </div>
+            </div>
+
+            <!--Desplegables-->
+            <p> Elija la compañía actual:  </p>
+            <select name="compañia" id="actual">
+                <option value="movistar">Movistar</option> 
+                <option value="orange">Orange</option> 
+                <option value="vodafone">Vodafone</option> 
+                <option value="yoigo">Yoigo</option> 
+                <option value="ninguna">No tengo ninguna compañía</option>
+            </select>
+
+            <p> En caso de portabilidad, elija la nueva compañía: </p>
+            <select name="portabilidad" id="portabilidad">
+                <option value="movistar">Movistar</option> 
+                <option value="orange">Orange</option> 
+                <option value="vodafone">Vodafone</option> 
+                <option value="yoigo">Yoigo</option> 
+            </select>
+        </fieldset> 
+
+        <!--Recoger info sobre datos bancarios-->
+        <fieldset class="form__box">
+            <legend class="form__title">Datos Bancarios</legend>
+
+            <div class="form__input">
+                <label for="pais"> País: </label>
+                <input type="text" id="pais" name="pais" placeholder="Intriduzca su país" value="ES" readonly="readonly"> (sólo válido ES)
+            </div>
+            <div class="form__input">
+                <label for="iban"> Control IBAN: </label>
+                <input type="text" id="iban" name="iban" placeholder="Intriduzca su IBAN" pattern="[0-9]{2}"> (dos dígitos)
+            </div>
+            <div class="form__input">
+                <label for="entidad"> Entidad: </label>
+                <input type="text" id="entidad" name="entidad" placeholder="Intriduzca su entidad" pattern="[0-9]{4}"> (cuatro dígitos)
+            </div>
+            <div class="form__input">
+                <label for="sucursal"> Sucursal: </label>
+                <input type="text" id="sucursal" name="sucursal" placeholder="Intriduzca su sucursal" pattern="[0-9]{4}"> (cuatro dígitos)
+            </div>
+            <div class="form__input">
+                <label for="dc"> DC: </label>
+                <input type="text" id="dc" name="dc" placeholder="Intriduzca su DC" pattern="[0-9]{2}"> (dos dígitos)
+            </div>
+            <div class="form__input">
+                <label for="cuenta"> Cuenta: </label>
+                <input type="text" id="cuenta" name="cuenta" placeholder="Intriduzca su cuenta" pattern="[0-9]{10}"> (diez dígitos)
+            </div>
+        </fieldset>
+
+        <!--Botones-->
+        <div class="button">
+        <input type="submit" value="Enviar Datos" /> 
+        <input type="reset" value="Borrar Datos" />
+        </div>
+    </form> 
+    </div>
+</body>
+</html>
