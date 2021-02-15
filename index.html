@@ -187,10 +187,27 @@
             </div>
         </fieldset>
 
+        <!--Estadistica -->
+        <fieldset class="form__box">
+            <legend class="form__title">Datos estadísticos, ¿Cómo nos conoció?</legend>
+
+            <input class="form__input" type="checkbox" name="conoce">A través de la TV  </input class="form__input">
+            <input class="form__input" type="checkbox" name="conoce">A través de la radio </input class="form__input">
+            <input class="form__input" type="checkbox" name="conoce">A través de internet </input class="form__input">
+            <input class="form__input" type="checkbox" name="conoce">Otros </input class="form__input">
+
+            <p>Valoración: <input id="valoracion" type="range" name="valoracion" min="0" max="5">Valoración:</p>
+            <p>Fecha de la encuesta: <input id="date" class="date" type="date" name="fecha" min="2019-01-01" value="2021-01-01">Fecha encuesta</p>
+        </fieldset>
         <!--Botones-->
-        <div class="button">
-        <input type="submit" value="Enviar Datos" /> 
-        <input type="reset" value="Borrar Datos" />
+        <div class="buttons">
+        <input class="submit" type="submit" value="Enviar Datos" /> 
+        <input class="reset" type="reset" value="Borrar Datos" />
+            <div class="button">
+                <button id="valoracionButton" type="button">Mostrar valoración</button>
+                <button id="cuentaButton" type="button">Mostrar cuenta</button>
+                <button id="semanaButton" type="button">Mostrar día semana</button>
+            </div>
         </div>
     </form> 
     </div>
