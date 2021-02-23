@@ -6,11 +6,11 @@ const cuentaButton = document.querySelector('#cuentaButton')
 const date = document.querySelector('#date')
 const semanaButton = document.querySelector('#semanaButton')
 
-valoracionButton.addEventListener('click', ()=>{
+valoracionButton.addEventListener('click', function(){
     alert(`Has valorado con ${valoracion.value}` )
 })
 
-cuentaButton.addEventListener('click', ()=>{
+cuentaButton.addEventListener('click', function(){
     alert(`Le informamos que su cuenta bancaria es: ${cuenta.value}`)
 })
 
