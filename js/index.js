@@ -11,9 +11,9 @@ valoracionButton.addEventListener('click', ()=>{
 })
 
 cuentaButton.addEventListener('click', ()=>{
-    alert(`Le informamos que su cuenta bamcaria es: ${cuenta.value}`)
+    alert(`Le informamos que su cuenta bancaria es: ${cuenta.value}`)
 })
 
 semanaButton.addEventListener('click', ()=>{
-    alert(`La fecha seleccionada en el elemento fecha es un ${date}`)
+    alert(`La fecha seleccionada en el elemento fecha es un ${date.value}`)
 })
