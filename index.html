@@ -71,15 +71,12 @@
             <!--numerico tamaño 5-->
             <div class="form__input">
                 <label for="cp"> Código Postal: </label>
-                <input 
-                type="number" 
-                id="cp" 
-                name="cp" 
-                placeholder="Introduzca su código postal" 
-                maxlength="5" 
-                minlength="3"
-                required="required"
-                pattern="[0-9]{5}">
+                <input
+                type="number"
+                name="cp"
+                requiredoninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength="5"
+                class="yellow">
             </div>
         </fieldset>
 
